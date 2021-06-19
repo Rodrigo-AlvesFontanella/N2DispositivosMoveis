@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#B491B665"
+    android:padding="15dp"
+    android:id="@+id/llFundoLista"
+    android:layout_width="match_parent"
+    android:layout_height="122dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:src="@mipmap/ic_launcher_foreground_2" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvListaCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="92dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/tvListaNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvListaQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvListaPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preco"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvListaTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total"
+            android:textSize="14dp"
+            android:textColorHint="@color/black" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

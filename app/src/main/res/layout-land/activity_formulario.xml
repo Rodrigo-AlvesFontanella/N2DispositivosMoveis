@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F2F2"
+    android:foregroundTint="@color/black"
+    android:textAlignment="center"
+    tools:context="br.com.segundotrab.apppizza.FormularioActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textNome"
+        android:textColor="@color/black"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etNome"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="280dp"
+        android:background="#F4F2F2"
+        android:ems="20"
+        android:hint="@string/textNomeHint"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textEndereço"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etQuantidade"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etQuantidade"
+        android:layout_width="238dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="308dp"
+        android:background="#F4F2F2"
+        android:hint="@string/textEndereçoHint"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textTelefone"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etPreco"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="#F4F2F2"
+        android:ems="10"
+        android:hint="@string/textTelefoneHint"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/etQuantidade" />
+
+    <Spinner
+        android:id="@+id/spCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="#F8F8F8"
+        android:backgroundTint="#DFE0E4"
+        android:entries="@array/arrayCategoria"
+        android:foregroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPreco" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#B491B665"
+        android:text="@string/btnSalvar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSabor" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#B491B665"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="310dp"
+        android:layout_height="37dp"
+        android:background="#B491B665"
+        android:text="Cadastro de produtos"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

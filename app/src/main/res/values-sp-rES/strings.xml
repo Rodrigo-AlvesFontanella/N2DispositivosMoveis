@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DiskPizza</string>
+
+    <string name="textNome">Nombre: </string>
+    <string name="textNomeHint"> Insira tu nombre... </string>
+    <string name="textEndereço">Localización: </string>
+    <string name="textEndereçoHint"> Ingrese su direccion... </string>
+    <string name="textTelefone">Teléfono: </string>
+    <string name="textTelefoneHint"> Ingresa tu teléfono... </string>
+    <string name="textSabor" translatable="false">Sabor: </string>
+
+
+
+    <string-array name="arrayCategoria">
+        <item>Categoria...</item>
+        <item>Produtos de higiene</item>
+        <item>Bebidas</item>
+        <item>Alimentos básicos</item>
+        <item>Limpeza</item>
+        <item>Padaria</item>
+        <item>Congelados</item>
+    </string-array>
+
+
+    <string name="txtAtencao">Aviso</string>
+    <string name="btnSalvar" translatable="false">Registro</string>
+    <string name="toolbartxt">Registro de pedidos </string>
+
+</resources>
